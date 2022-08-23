@@ -23,7 +23,11 @@ INTERFACE if_mbc_cp_app_configuration
     personalization TYPE not_released,
     creation_mode   TYPE not_released,
     BEGIN OF object_page.
-
+TYPES entity                  TYPE string.
+TYPES editable_header_content TYPE abap_bool.
+TYPES condensed_table_layout  TYPE abap_bool.
+TYPES disable_paste           TYPE abap_bool.
+TYPES enable_full_screen      TYPE abap_bool.
   TYPES:
       sectionlayout   TYPE string,
       personalization TYPE personalization,
